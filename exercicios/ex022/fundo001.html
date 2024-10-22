@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div 
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+
+        div#q3:hover {
+            background-image: url('imagens/pattern002.png');
+        }
+
+        #hamburguer {
+            background-color: navy;
+            width: 50px;
+            height: 50px;
+            
+        }
+
+        #ham2 {
+            display: none;
+            background-color: rgb(28, 28, 145);
+            width: 200px;
+            height: 200px;
+        }
+
+        #hamburguer:hover #ham2 {
+            display: block;
+            color: white;
+            text-align: center;
+            padding-top: 17px;
+        }
+
+        #hamburguer > #ham2 > nav > a {
+            display: block;
+            padding: 20px;
+            border: 1px solid white;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding-top: 17px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+        <h1></h1>
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    <div id="hamburguer">
+        <div id="ham2">
+            <nav>
+                <a href="#">Perguntas</a>
+                <a href="#">Duvidas</a>
+                <a href="#">Trabalhe</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
