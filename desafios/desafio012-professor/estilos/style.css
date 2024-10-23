@@ -1,101 +1,65 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
-
-:root {
-    --fonte-titulo: 'Passion One', Arial;
-    --fonte-paragrafo: 'Sriracha', Arial;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-* {
-    padding: 0px;
-    margin: 0px;
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
-    height: 190px;
     background-color: black;
-    
+    color: white;
+    text-align: center;
 }
 
-header > h1 {
-    text-align: center;
-    color: white;
+header h1 {
     padding-top: 50px;
-    font-size: 3.2em;
-    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
 }
 
-header p, a {
-    font-family: Arial, Helvetica, sans-serif;
+header p {
+    padding-bottom: 50px;
+}
+
+a {
     color: white;
-    text-align: center;
     text-decoration: none;
-
+    font-weight: bolder;
 }
 
-main p {
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
     color: black;
-    font-family: var(--fonte-paragrafo);
-    padding: 80px 40px 80px 20px;
-    font-weight: bold;
-    font-size: 1.6em;
-    line-height: 50px;
 }
 
-
-#estrofe-imagem1 {
-    position: relative;
-    background: black url(imagens/background001.jpg) center right no-repeat fixed;
-    background-size: cover;
-    height: 700px;
-    box-shadow: inset 0px 0px 12px 7px  rgba(0, 0, 0, 0.466);
-}
-
-.fundo-texto-imagem {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.486);
-    width: 360px;
-    height: 370px;
-    left: 2%;
-    top: 20%;
-
-}
-
-.fundo-texto-imagem > p {
+section.imagem {
+    background-color: rgb(71, 71, 71);
     color: white;
-    padding: 10px;
 }
 
-.estrofe-espacamento {
-    padding-bottom: 0px;
-}
-
-#estrofe-imagem2{
-    position: relative;
-    background: black url(imagens/background002.jpg) center right no-repeat fixed;
-    background-size: cover;
-    height: 700px;
-    box-shadow: inset 0px 0px 12px 7px  rgba(0, 0, 0, 0.466);
-}
-
-#fundo-texto-imagem2 {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.600);
-    width: 360px;
-    left: 2%;
-    top: 20%;
-}
-
-#fundo-texto-imagem2 > p {
-    color: white;
-    padding: 10px;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 400px;
 }
 
 footer {
-    font-family: var(--fonte-paragrafo);
-    padding: 10px;
     color: white;
     background-color: black;
     text-align: center;
+    padding: 10px;
 }
