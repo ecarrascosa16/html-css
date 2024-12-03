@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #291eff, #00b5ff) no-repeat;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    height: 350px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#imagem {
+    width: 330px;
+    height: 350px;
+    background-color: red;
+    background: url(../imagens/pexels-goumbik-574073\ \(1\).jpg) center top no-repeat;
+    background-size: 600px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+section#informacoes {
+    width: 520px;
+}
+
+section#informacoes > h1 {
+    font-size: 2.3em;
+    padding: 15px;
+    text-align: center;
+}
+
+section#informacoes > p {
+    font-size: 1.1em;
+    padding: 0px 10px 0px 10px;
+}
+
+section#inputs {
+    display: flex;
+    justify-content: center;
+}
+
+section#informacoes > section#inputs > form > p {
+    height: 50px;
+    width: 470px;
+    margin: 5px;
+    background-color: #00b5ff;
+    border-radius: 4px;
+}
+
+section#inputs > form #iemail, #isenha {
+    position: relative;
+    bottom: 11px;
+    width: 405px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+section#inputs > form > p > label > i {
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+
+#entrar {
+    height: 100%;
+    width: 100%;
+    border: 1px;
+    background-color: #46cbff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+    border-radius: 4px;
+}
+
+#entrar:hover {
+    background-color: #2a9ac7;
+}
+
+#esqueci-senha {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+    border-radius: 4px;
+}
+
+#esqueci-senha:hover {
+    background-color: rgb(233, 233, 233);
+}
